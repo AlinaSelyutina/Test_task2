@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Tests for checking internalization, loan and search functionality">
+  <test name="User should not be able to submit loan form without completing it">
+    <classes>
+      <class name="LoanFormValidationTest"/>
+    </classes>
+  </test>
+  <test name="User should be able to switch language from Azerbaijan to Russian or English">
+    <classes>
+      <class name="InternationalisationTest"/>
+    </classes>
+  </test>
+  <test name="User should be able to find three 'American Express' cards in 'Cards' page">
+    <classes>
+      <class name="GlobalQuickSearchTest"/>
+    </classes>
+  </test>
+</suite>
