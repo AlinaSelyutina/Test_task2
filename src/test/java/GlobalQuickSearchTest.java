@@ -1,3 +1,5 @@
+import static logger.TestLogger.info;
+
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import page_objects.pages.CardsPage;
@@ -9,11 +11,13 @@ public class GlobalQuickSearchTest extends BaseTest {
   @BeforeMethod
   public void setUp(){
     landingPage = new LandingPage();
+    info("Navigate to Loan form");
     landingPage.open(EN_URL);
     cardsPage = landingPage.openCardsPage();
   }
   @Test
   public void test(){
+    info("Check the count of American Express cards");
     cardsPage.checkCardsCountWithSpecifiqeName("American Express", 3);
   }
 
