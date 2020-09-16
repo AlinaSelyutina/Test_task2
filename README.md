@@ -1,9 +1,9 @@
-#Overview
+# Overview
 In this project three test case was implemented for https://www.ibar.az/ web application.
 Here technologies such as Java, Selenium, TestNG, log4j were used. The project are built with Maven.
 You can find all dependencies in pom.xml file.
 
-#Structure of the project
+# Structure of the project
 
 ``src\main\java\business_objects`` -- in this package there is enum with language properties
 
@@ -19,9 +19,9 @@ You can find all dependencies in pom.xml file.
 
 ``src\test\resources\tests.xml`` -- also tests could be run with this TestNG xml file 
 
-##Test cases which are implemented
+## Test cases which are implemented
 
-###Test 1: " User should not be able to submit loan form without completing it"
+### Test 1: " User should not be able to submit loan form without completing it"
 
 **Given:** Landing page is opened
 
@@ -29,7 +29,7 @@ You can find all dependencies in pom.xml file.
 
 **Then:** All mandatory fields inline in red.
 
-###Test 2: "User should be able to switch language from Azerbaijan to Russian or English"
+### Test 2: "User should be able to switch language from Azerbaijan to Russian or English"
 
 **Given:** Landing page is opened in Azerbaijani 
 
@@ -37,7 +37,7 @@ You can find all dependencies in pom.xml file.
 
 **Then:** Link is changed to https://www.ibar.az/en/ferdi (https://www.ibar.az/ru/ferdi) and "Haqqımızda" link text is changed to "About us"("О нас")
 
-###Test 3: "User should be able to find three 'American Express' cards in 'Cards' page"
+### Test 3: "User should be able to find three 'American Express' cards in 'Cards' page"
 
 **Given:** Landing page is opened in Azerbaijani 
 
